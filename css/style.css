@@ -1,0 +1,568 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    /* background-color: rgba(0, 0, 0, 0.305); */
+    /* font-family: 'Roboto', sans-serif; */
+}
+h1,h2,h3,h4
+{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+/*************************home***********************/
+.navbar{
+    width: 90%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    /* padding: 10px 20px; */
+    box-shadow: 3px 3px 10px;
+    background-color: rgba(0, 0, 0, 0.462);
+}
+.navbar-brand{
+    color: darkgoldenrod !important;
+    font-size: 30px;
+    background: linear-gradient(45deg,darkgoldenrod,white);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.khela{
+    color: darkgoldenrod !important;
+    
+}
+.nav-link:hover{
+    background: linear-gradient(45deg,darkgoldenrod,white);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;}
+.home{
+    height: 100vh;
+    background-image: url(../imgs/slider-02.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.layer{
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.679);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.home-content{
+    text-align: center;
+}
+.span-hello{
+    font-size: 2em;
+    font-weight: 400;
+}
+.home-content h1{
+    font-size: 2.5em;
+    color: darkgoldenrod;
+    font-weight: 700;
+    margin: 15px 0;
+}
+.home-content p{
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.801);
+    font-weight: 300;
+}
+.home-content p::after{
+    content: " |";
+    /* background-color: aqua; */
+    /* color: blue; */
+    animation-name: developer;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes developer{
+    0% {content: " |";}
+    7% {content: "D |"}
+    14% {content: "De |"}
+    21% {content: "Dev |"}
+    28% {content: "Deve |"}
+    35% {content: "Devel |"}
+    42% {content: "Develo |"}
+    49% {content: "Develop |"}
+    56% {content: "Develope |"}
+    63% {content: "Developer |"}
+    67% {content: "Develope |"}
+    71% {content: "Develop |"}
+    75% {content: "Develo |"}
+    79% {content: "Devel |"}
+    83% {content: "Deve |"}
+    87% {content: "Dev |"}
+    91% {content: "De |"}
+    95% {content: "D |"}
+    100% {content: " |"}
+}
+/*************************home***********************/
+/*************************About************************/
+
+.about{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin: 2em 0;
+
+}
+.about-img{
+    width: 35%;
+    /* background-color: aqua; */
+}
+.about-img .img{
+    position: relative;
+}
+.about-img .img .img-border{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    border: rgb(62, 62, 62) 10px solid;
+    border-radius: 5px;
+    top: -20px;
+    left: -20px;
+    
+}
+.about-img img{
+    width: 100%;
+}
+.about_img-layer{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.66);
+    transform-origin: bottom;
+    transform: scaley(0);
+    transition-duration: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3em;
+}
+.about-img:hover .about_img-layer{
+    transform: scaleY(100%);
+}
+.about_img-layer i{
+    margin-left: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+.about-content{
+    width: 50%;
+    padding-top: 20px;
+}
+.about-content .personal-information{
+    margin-top: 2em;
+}
+.personal-information h5,
+.personal-information p{
+    display: inline-block;
+}
+.about-content h2{
+    font-size: 2.2em;
+    font-weight: 500;
+}
+.about-content p{
+    font-size: 1em;
+    font-weight: 350;
+    color: rgba(0, 0, 0, 0.733);
+}
+.line{
+    width: 90%;
+    height: 2px;
+    background-color: darkgoldenrod;
+}
+.about-content h5{
+    font-size: 1em;
+    font-weight: 500;
+}
+.about-content .button{
+    margin-top: 1em;
+}
+.about-content button{
+    padding: .4em .8em;
+    margin-right: 1em;
+    border: 0;
+    border-radius: .3em;
+    background-color: darkgoldenrod;
+    color: white;
+}
+.about-content h2::before{
+    content: "H";
+    color: darkgoldenrod;
+}
+/*************************About************************/
+/*********************our-services*********************/
+.services-container{
+    background-color: #F1F1F1;
+}
+.our-services{
+    width: 90%;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 3em;
+    padding: 3em 0;
+    /* background-color: #333333; */
+}
+.our-services h2{
+    font-size: 2.2em;
+}
+.services{
+    font-size: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    /* align-items: center; */
+}
+.services .inner{
+    width: 25%;
+    text-align: center;
+    padding: 1em .5em;
+    transition: .5s;
+    /* background-color: blue; */
+}
+.services .inner:hover{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;}
+.services .inner i{
+    font-size: 2em;
+    color: darkgoldenrod;
+    margin-bottom: .5em;
+}
+.services .inner h3{
+    font-size: 1.5em;
+}
+.services .inner p{
+    font-size: 1em;
+    font-weight: 350;
+    color: rgba(0, 0, 0, 0.733);}
+/*********************our-services*********************/
+/*********************our-portfolio*********************/
+.portfolio-container{
+    width: 100%;
+    margin: auto;
+}
+.our-portfolio{
+    font-size: 20px;
+    /* background-color: gray; */
+}
+.our-portfolio .heading{
+    text-align: center;
+    padding: 2em 0;
+}
+.our-portfolio .heading h2{
+    font-size: 2.2em;
+}
+.our-portfolio .options{
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    /* background-color: #333333; */
+}
+.our-portfolio .options ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding-inline-start: 0;
+}
+.our-portfolio .options li{
+    list-style-type: none;
+}
+.our-portfolio .options li:hover{
+    border-bottom: 2px darkgoldenrod solid;
+}
+.our-portfolio .options a{
+    text-decoration: none;
+    color: darkgoldenrod;
+    font-size: 1em;
+}
+.our-portfolio .options a:hover{
+    color: rgb(230, 173, 30);
+}
+.our-portfolio .projects{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+.our-portfolio .projects .project{
+    padding:  .5em;
+    padding-bottom: .5em;
+    width: 32%;
+}
+.our-portfolio .projects .project img{
+    width: 100%;
+    margin-bottom: 1em;
+    transition-duration: .5s;
+}
+.our-portfolio .projects .project img:hover{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
+}
+.our-portfolio .projects .project h3{
+    padding-left: .2em;
+    font-size: 1.3em;
+}
+.our-portfolio .projects .project a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.our-portfolio .projects .project p{
+    font-size: 1em;
+    font-weight: 350;
+    color: rgba(0, 0, 0, 0.733);
+    padding-left: .2em;
+
+}
+.team-data{
+    font-size: 20px;
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 4em;
+    padding: 5em 5em;
+}
+.team-data .size{
+    width: 25%;
+}
+.team-data i{
+    color: darkgoldenrod;
+    font-size: 2em;
+}
+.team-data span{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: .5em 0;
+}
+.team-data p{
+    font-size: 1em;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.733);
+}
+.team-data i
+,.team-data span
+,.team-data p{
+    display: block;
+}
+
+/*********************our-portfolio*********************/
+
+/*********************our-blog*********************/
+.blog-container{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    background-color: #F1F1F1;
+}
+.our-blog{
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    overflow: auto;
+}
+.our-blog .heading{
+    text-align: center;
+    padding: 2em 0;
+}
+
+.our-blog .videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* background-color: #333333; */
+}
+.our-blog .video{
+    width: 30%;
+    /* background-color: aqua; */
+}
+
+.our-blog .video p{
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.652);
+    font-size: .8em;
+}
+.our-blog .video h3{
+    font-size: 1em;
+    font-weight: 600;
+}
+.our-blog .video a{
+    text-decoration: none;
+    color: black;
+    font-size: .8em;
+}
+.our-blog .video i{
+    color: darkgoldenrod;
+}
+/*********************our-blog*********************/
+
+/*****************************feedback*****************************/
+.feedback{
+    /* background-color: #a8a8a8; */
+    font-size: 20px;
+    padding: 4em;
+}
+.feedback-card{
+    width: 65%;
+    margin: auto;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em 2em;
+    border-radius: 20px;
+    background: linear-gradient(180deg,rgb(172, 125, 7),rgb(255, 255, 255));
+    box-shadow: 3px 3px 10px;
+}
+.feedback .heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3em;
+    /* background-color: aqua;   */
+}
+.feedback .heading h2{
+    font-size: 2.2em;
+}
+.feedback-card .img{
+    width: 30%;
+    text-align: center;
+}
+.feedback-card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.feedback-card .content{
+    width: 70%;
+    /* background-color: #FF305B; */
+}
+.feedback-card .content .stars{
+    color: darkgoldenrod;
+}
+/*****************************feedback*****************************/
+
+/*********************contact-us*********************/
+.contact-us{
+    font-size: 20px;
+    margin: auto;
+    padding-top: 4em;
+    /* background-color: darkgoldenrod; */
+    text-align: center;
+    position: relative;
+}
+.contact-us h2{
+    font-size: 2.2em;
+}
+.frs-line{
+    width: 5%;
+    height: 2px ;
+    margin: auto;
+    background-color: black;
+}
+.sec-line{
+    width: 10%;
+    height: 2px ;
+    background-color: black;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.thd-line{
+    width: 5%;
+    height: 2px ;
+    margin: auto;
+    background-color: black;
+}
+form{
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.name-inp{
+    width: 48%;
+    padding: 8px;
+    border: 1px solid darkgoldenrod;
+    border-radius: 5px;
+}
+.email-inp{
+    width: 48%;
+    padding: 8px;
+    border: 1px solid darkgoldenrod;
+    border-radius: 5px;
+}
+textarea{
+    width: 100%;
+    height: 6em;
+    border: 1px solid darkgoldenrod;
+    border-radius: 5px;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+.contact-us button{
+    /* width: 0%; */
+    padding: .5em 1em;
+    border: 0;
+    background-color: darkgoldenrod;
+    border-radius: .5em;
+    margin-bottom: 6em;
+    font-size: .9em;
+}
+button:hover{
+    background-color:rgb(136, 99, 8) ;
+}
+/*********************contact-us*********************/
+/*********************footer*************************/
+footer{
+    font-size: 20px;
+    text-align: center;
+    background-color: #333333;
+    padding: 2em 2em .5em 2em;
+    color: white;
+}
+footer i{
+    font-size: 1.2em;
+    margin-left: 8px;
+    padding: 1em 0;
+}
+footer i:hover{
+    color: darkgoldenrod;
+    cursor: pointer;
+}
+footer p{
+    font-size: .8em;
+}
+footer a{
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+footer a:hover{
+    color: rgb(224, 163, 9);
+    border-bottom: 1px solid darkgoldenrod;
+}
+/*********************footer*********************/

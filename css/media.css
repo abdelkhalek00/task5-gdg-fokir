@@ -1,0 +1,302 @@
+/***************************home*********************/
+@media screen and (max-width: 768px){
+    .layer{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 500px){
+    .layer{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 430px){
+    .last_name{
+        display: none;
+    }
+}
+/**************************home************************/
+/**************************about**********************/
+@media screen and (max-width: 1400px){
+    .about{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .about-img{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 1048px){
+    .about{
+        justify-content: space-between;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .container{
+        width: 95%;
+    }
+    .about{
+        font-size: 15px;
+        justify-content: center;
+    }
+    .about table{
+        width: 100%;
+    }
+    .about-img{
+        width: 100%;
+    }
+    .about-content{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 450px){
+    .about{
+        font-size: 15px;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 376px){
+    .about{
+        font-size: 13px;
+        justify-content: center;
+    }
+}
+/***************************about*********************/
+/***************************our services*********************/
+
+@media screen and (max-width: 1400px){
+    .services{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .our-services{
+        font-size: 15px;
+    }
+    .services{
+        font-size: 15px;
+    }
+    .services .inner{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 800px){
+    .services .inner{
+        width: 45%;
+        padding: 1em 1em;
+    }
+}
+@media screen and (max-width: 600px){
+    .services .inner{
+        width: 50%;
+        padding: 1em .5em;
+    }
+}
+@media screen and (max-width: 480px){
+    .our-services{
+        font-size: 17px;
+    }
+    .services{
+        font-size: 17px;
+    }
+    .services .inner{
+        width: 70%;
+        padding: 1em .5em;
+    }
+}
+/***************************our services*********************/
+/***************************our portfolio*********************/
+@media screen and (max-width: 1400px){
+    .our-portfolio{
+        font-size: 16.5px;
+    }
+    .our-portfolio .projects{
+        justify-content: space-around;
+    }
+    .our-portfolio .projects .project{
+        padding: 0 .2em;
+    }
+    .team-data{
+        font-size: 16.5px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .our-portfolio .options{
+        width: 30%;
+    }
+    .our-portfolio .projects .project{
+        width: 40%;
+        margin-bottom: 1.5em;
+        padding-bottom: .5em;
+    }
+    .our-portfolio{
+        font-size: 16.5px;
+    }
+}
+@media screen and (max-width: 770px){
+    .portfolio-container{
+        width: 100%;
+    }
+    .our-portfolio .options{
+        width: 35%;
+    }
+    .our-portfolio{
+        font-size: 15px;
+    }
+    .our-portfolio .projects{
+        justify-content: space-around;
+    }
+    .our-portfolio .projects .project{
+        width: 48%;
+        margin-bottom: 1.5em;
+        padding-bottom: .5em;
+    }
+    .team-data .size{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}
+@media screen and (max-width: 480px){
+    .portfolio-container{
+        width: 100%;
+    }
+    .our-portfolio .options{
+        width: 55%;
+    }
+    .our-portfolio{
+        font-size: 16   px;
+    }
+    .our-portfolio .projects{
+        justify-content: space-around;
+    }
+    .our-portfolio .projects .project{
+        width: 70%;
+        margin-bottom: 2.5em;
+        padding-bottom: .5em;
+    }
+}
+/***************************our portfolio*********************/
+/***************************feedback***********************/
+@media screen and (max-width: 1200px){
+    .feedback-card{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1100px){
+    .feedback{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .feedback{
+        font-size: 16px;
+    }
+    .feedback-card{
+        width: 70%;
+        padding: 2em .5em;
+        text-align: center;
+    }
+    .feedback-card .img{
+        width: 100%;
+    }
+    .feedback-card .heading{
+        order: 0;
+    }
+    .feedback-card .content{
+        width: 100%;
+    } 
+}
+@media screen and (max-width: 500px){
+    .feedback-card{
+        width: 100%;
+    }
+}
+/***************************feedback***********************/
+/**************************contact-us******************/
+@media screen and (max-width: 1400px){
+    .contact-us{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .container{
+        width: 95%;
+    }
+    .contact-us{
+        font-size: 15px;
+    }
+    .frs-line{
+        width: 10%;
+    }
+    .sec-line{
+        width: 20%;
+    }
+    .thd-line{
+        width: 10%;
+    }
+}
+@media screen and (max-width: 768px){
+    .contact-us{
+        width: 90%;
+        font-size: 13px;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 608px){
+    .contact-us{
+        width: 90%;
+        font-size: 13px;
+        justify-content: center;
+    }
+    form{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px){
+    form{
+        justify-content: start;
+    }
+    .name-inp{
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+    .email-inp{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 376px){
+    .contact-us{
+        font-size: 13px;
+        justify-content: start;
+    }
+}
+
+
+/*****************************contact-us*******************/
+/*****************************footer**********************/
+@media screen and (max-width: 1000px){
+    footer{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 750px){
+    footer{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 500px){
+    footer{
+        font-size: 13px;
+    }
+}
+/*****************************footer**********************/
+
+
+
+
+
+
